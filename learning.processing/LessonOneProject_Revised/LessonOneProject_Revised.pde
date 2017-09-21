@@ -25,5 +25,5 @@ fill(r,g,b,a);
 };
 
 void mousePressed(){
-  ellipse(mouseX, mouseY, 30, 30);
+  ellipse(mouseX, mouseY, 0, 0);
 };
