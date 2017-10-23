@@ -2,7 +2,7 @@ Button myButton;
 
 void setup(){
   size(200, 200);
-  myButton = new Button(height/2, width/2, 100, 50);
+  myButton = new Button(height/2, width/2, 100, 50, 255);
 }
 
 void draw(){
@@ -15,23 +15,34 @@ class Button {
   float y;
   float w;
   float h;
+  int buttonColor;
   boolean on;
   
- Button(float tempX, float tempY, float tempW, float tempH) {
+ Button(float tempX, float tempY, float tempW, float tempH, int tempbuttonColor) {
     
     x = tempX;
     y = tempY;
     w = tempW;
     h = tempH;
+    buttonColor = tempbuttonColor;
   }
   
   
    void display() {
     rectMode(CENTER);
     stroke(0);
-    fill(150);
+    fill(buttonColor);
     rect(x, y, w, h);
+    if(mouseX > width/2) {
+      buttonColor = 150;
    }
+   
  
-}
+     
+   }
+
+    
+  }
+ 
+
   
