@@ -35,14 +35,9 @@ class Button {
     rect(x, y, w, h);
     if(mouseX > width/2) {
       buttonColor = 150;
-   }
-   
- 
-     
-   }
-
-    
+   } else {
+     buttonColor = 255;
   }
- 
-
-  
+   }
+}
+   
