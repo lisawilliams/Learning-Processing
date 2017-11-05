@@ -17,6 +17,12 @@ void draw(){
   catcher.setLocation(mouseX, mouseY);
   catcher.display();
   raindrop1.move();
-  raindrop1.display();
+  raindrop2.move();
+  if (raindrop1.intersect(raindrop2)){
+    raindrop1.highlight();
+    raindrop2.highlight();
+  }
+   raindrop1.display();
+  raindrop2.display();
   
 }
