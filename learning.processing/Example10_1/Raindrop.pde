@@ -38,7 +38,7 @@ class Raindrop {
   
     // changes colors of raindrops if they intersect
   void highlight() {
-  c = color(#FFC0CB);
+  c = color(0, 150);
 }
   
   // draw the raindrop
