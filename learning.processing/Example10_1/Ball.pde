@@ -1,17 +1,14 @@
 // Learning Processing
-// Daniel Shiffman
-// http://www.learningprocessing.com
-
 // Example 10-3: Bouncing ball with intersection
 
 class Ball {
-
   float r; // radius
   float x, y;
   float xspeed, yspeed;
   color c = color(100, 50);
 
   // Constructor
+
   Ball(float tempR) {
     r = tempR;
     x = random(width);
@@ -34,12 +31,12 @@ class Ball {
       yspeed *= - 1;
     }
   }
- 
-  
 
-  // Whenever the balls are touching, this highlight() function is called 
+
+
+  // Whenever the balls are touching, this highlight() function is called
   // and the color is darkened.
-  void highlight() { 
+  void highlight() {
     c = color(0, 150);
   }
 
@@ -56,7 +53,7 @@ class Ball {
   // If distance is less than the sum of radii the circles touch
   boolean intersect(Ball b) {
 
-    // Objects can be passed into functions as arguments too! 
+    // Objects can be passed into functions as arguments too!
     float distance = dist(x, y, b.x, b.y); // Calculate distance
 
     // Compare distance to sum of radii
